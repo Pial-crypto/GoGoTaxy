@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_pickup"
+        android:title="Airport Pick Up"
+        android:icon="@drawable/ic_pickup" />
+    <item
+        android:id="@+id/nav_dropoff"
+        android:title="Airport Drop Off"
+        android:icon="@drawable/ic_dropoff" />
+</menu>

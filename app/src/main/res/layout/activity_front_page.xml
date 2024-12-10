@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- Emergency Icon -->
+            <ImageView
+                android:src="@drawable/emergency"
+                android:id="@+id/emergency_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="Emergency Icon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Happy Riding Text -->
+            <TextView
+                android:id="@+id/happy_riding_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Happy Riding"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/emergency_icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="8dp" />
+
+            <!-- Search Bar and Button -->
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/search_bar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:queryHint="Search here for location..."
+                android:background="#DED2D2"
+                app:layout_constraintTop_toBottomOf="@id/happy_riding_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/book_later_button"
+                android:layout_marginTop="16dp" />
+
+            <Button
+                android:id="@+id/book_later_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book for Later"
+                android:backgroundTint="#E61818"
+                app:layout_constraintTop_toTopOf="@id/search_bar"
+                app:layout_constraintStart_toEndOf="@id/search_bar"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Suggestion Text and See All -->
+            <TextView
+                android:id="@+id/suggestion_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suggestions"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/search_bar"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/see_all_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See All >"
+                android:textColor="@android:color/holo_blue_dark"
+                app:layout_constraintTop_toTopOf="@id/suggestion_text"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- GridView -->
+            <GridView
+                android:id="@+id/grid_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="56dp"
+                android:horizontalSpacing="8dp"
+                android:numColumns="4"
+                android:verticalSpacing="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/suggestion_text" />
+
+            <!-- Horizontal RecyclerView -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/horizontal_recycler_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/grid_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp" />
+
+            <!-- Thanks Image -->
+            <ImageView
+                android:id="@+id/thanks_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/thanks_for_joining"
+                android:contentDescription="Thank You"
+                app:layout_constraintTop_toBottomOf="@id/horizontal_recycler_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation Menu -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</LinearLayout>

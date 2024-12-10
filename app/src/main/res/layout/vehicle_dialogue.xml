@@ -1,0 +1,84 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Vehicle"
+        android:textSize="18sp"
+        android:textColor="#6200EE"
+        android:layout_marginBottom="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/vehicleOptionsGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <!-- Car Option with Icon -->
+        <RadioButton
+            android:id="@+id/rbCar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Car"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/baseline_directions_car_24"
+            android:button="@null"
+            android:paddingLeft="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+        <!-- Bike Option with Icon -->
+        <RadioButton
+            android:id="@+id/rbBike"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bike"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/baseline_directions_bike_24"
+            android:button="@null"
+            android:paddingLeft="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+        <!-- Van Option with Icon -->
+        <RadioButton
+            android:id="@+id/rbVan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CNG"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/auto"
+            android:button="@null"
+            android:paddingLeft="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnConfirmSelection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm Selection"
+        android:backgroundTint="#6200EE"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

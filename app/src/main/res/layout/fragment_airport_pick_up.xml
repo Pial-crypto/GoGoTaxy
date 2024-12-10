@@ -1,0 +1,136 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header Section with Icon -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:src="@drawable/ic_service"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"/>
+            <TextView
+                android:text="Committed to Serve You"
+                android:textSize="18sp"
+                android:textColor="#6200EE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <!-- Time Picker -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnSelectTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Time"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:text="Choose the time when you want the delivery."
+            android:textSize="14sp"
+            android:textColor="#888888"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Location (Dhaka or other) -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location: Dhaka"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:text="Specify the location for delivery."
+            android:textSize="14sp"
+            android:textColor="#888888"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Select Vehicle Button -->
+        <Button
+            android:id="@+id/btnSelectVehicle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Vehicle"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:text="Choose your preferred vehicle for the delivery."
+            android:textSize="14sp"
+            android:textColor="#888888"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Enter Description -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter description or note for rider"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Write here"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:text="Provide any additional notes or instructions for the rider."
+            android:textSize="14sp"
+            android:textColor="#888888"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Confirm Button -->
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:text="Click 'Confirm' to proceed with your order."
+            android:textSize="14sp"
+            android:textColor="#888888"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

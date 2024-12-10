@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/back_button_terms"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/baseline_arrow_circle_left_24"
+            android:contentDescription="Back Button"
+            android:background="?attr/selectableItemBackground"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GoGoTaxi - Terms and Conditions"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Terms & Conditions Content -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Terms and Conditions of GoGoTaxi"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Sample Terms & Conditions Text -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="By using GoGoTaxi services, you agree to the following terms and conditions:"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. GoGoTaxi provides a platform for ride-sharing. Users must agree to the rules for safe and lawful use."
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. Users must provide accurate information for booking and payment."
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. GoGoTaxi is not liable for any damages, injuries, or losses during the ride."
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4. GoGoTaxi reserves the right to suspend or terminate accounts that violate the terms."
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5. The terms are subject to change. Users should periodically check the terms for updates."
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Governing Law:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="These terms will be governed by the laws of the jurisdiction where GoGoTaxi operates."
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+</ScrollView>

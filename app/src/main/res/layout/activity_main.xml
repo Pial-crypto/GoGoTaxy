@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    >
+
+    <!-- App Logo -->
+    <com.airbnb.lottie.LottieAnimationView
+
+        android:layout_width="316dp"
+        android:layout_height="231dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        app:lottie_rawRes="@raw/app_logo" />
+
+    <!-- Email Field -->
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:drawableStart="@drawable/ic_email"
+        android:padding="10dp"
+        android:layout_marginBottom="12dp"
+        android:background="@color/white" />
+
+    <!-- Password Field -->
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/ic_password"
+        android:padding="10dp"
+        android:layout_marginBottom="12dp"
+        android:background="@color/white" />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:backgroundTint="#5460A0"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Forgot Password -->
+    <TextView
+        android:id="@+id/forgotPasswordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Sign Up Link -->
+    <TextView
+        android:id="@+id/signupTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account? Sign Up"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>

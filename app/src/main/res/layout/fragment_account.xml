@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Circular Profile Image -->
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/no_image"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_shape"
+            android:contentDescription="Profile Image"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Name Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/name_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="John Doe"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black" />
+
+            <ImageView
+                android:id="@+id/edit_name"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/pen"
+                android:contentDescription="Edit Name"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name"
+            android:visibility="gone"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp" />
+
+        <!-- Phone Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/phone_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="+1234567890"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black" />
+
+            <ImageView
+                android:id="@+id/edit_phone"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/pen"
+                android:contentDescription="Edit Phone"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/phone_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your phone number"
+            android:visibility="gone"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp" />
+
+        <!-- Settings Section -->
+        <Button
+            android:id="@+id/settings_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:backgroundTint="@android:color/holo_orange_light"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="20dp" />
+
+        <!-- Logout Button -->
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="12dp" />
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:textColor="@android:color/white"
+            android:enabled="false"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>

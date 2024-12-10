@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Back Button and Title -->
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="start"
+            android:layout_marginBottom="16dp">
+
+            <ImageButton
+                android:id="@+id/back_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/baseline_arrow_circle_left_24"
+                android:background="@android:color/transparent"
+                android:contentDescription="Back Button" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Package Delivery"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginStart="16dp"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <!-- Send Package Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="16dp">
+
+            <ImageButton
+                android:id="@+id/send_package_button"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/send_package"
+                android:contentDescription="Send Package"
+                android:background="@android:color/transparent" />
+
+        </LinearLayout>
+
+        <!-- Description for Send Package -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Package"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send any product you want to deliver."
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Receive Package Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="16dp">
+
+            <ImageButton
+                android:id="@+id/receive_package_button"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/receive_package"
+                android:contentDescription="Receive Package"
+                android:background="@android:color/transparent" />
+
+        </LinearLayout>
+
+        <!-- Description for Receive Package -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Receive Package"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Receive the package that was sent to you."
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Surprise Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="16dp">
+
+            <ImageButton
+                android:id="@+id/surprise_button"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/surprize"
+                android:contentDescription="Surprise"
+                android:background="@android:color/transparent" />
+
+        </LinearLayout>
+
+        <!-- Description for Surprise -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Surprise"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Do you need to surprise anyone? We will keep this private!"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+</ScrollView>

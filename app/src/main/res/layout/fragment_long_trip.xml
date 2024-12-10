@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_gravity="start"
+        android:backgroundTint="#2196F3"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:src="@drawable/baseline_arrow_circle_left_24"
+        android:text="Back"
+        android:textColor="#FFFFFF" />
+
+    <!-- ImageView -->
+    <ImageView
+        android:id="@+id/tripImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/long_trip" />
+
+    <!-- TextView for trip details -->
+    <TextView
+        android:id="@+id/tripDetail1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Long trips are safe and comfortable."
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/tripDetail2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Affordable and pocket-friendly pricing."
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/tripDetail3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Expert and friendly drivers."
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/tripDetail4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="24/7 customer support for your assistance."
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:padding="8dp" />
+
+    <!-- Buttons for Immediate and Book for Later -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/immediateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#4CAF50"
+            android:text="Immediate"
+            android:textColor="#FFFFFF"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="12dp" />
+
+        <Button
+            android:id="@+id/bookLaterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF9800"
+            android:text="Book for Later"
+            android:textColor="#FFFFFF"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="12dp" />
+    </LinearLayout>
+
+</LinearLayout>

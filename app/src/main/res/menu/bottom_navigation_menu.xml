@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/service"
+        android:title="Home" />
+    <item
+        android:id="@+id/menu_service"
+        android:icon="@drawable/service"
+        android:title="Service" />
+    <item
+        android:id="@+id/menu_activity"
+        android:icon="@drawable/activity"
+        android:title="Activity" />
+    <item
+        android:id="@+id/menu_profile"
+        android:icon="@drawable/account"
+        android:title="Profile" />
+</menu>

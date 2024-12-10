@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialog_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@color/white"
+    android:gravity="center">
+
+    <!-- Close Button (Cross) -->
+    <ImageButton
+        android:id="@+id/btnClose"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="end"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/baseline_close_24"
+        android:background="@android:color/transparent"/>
+
+    <!-- Lottie Animation -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="match_parent"
+        android:layout_height="173dp"
+        android:layout_marginBottom="16dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/on_the_way_trip" />
+
+    <!-- Status Message -->
+    <TextView
+        android:id="@+id/tvStatusMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your ride is on the way!"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+
+</LinearLayout>

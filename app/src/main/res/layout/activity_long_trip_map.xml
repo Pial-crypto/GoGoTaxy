@@ -1,0 +1,115 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:id="@+id/main"
+    android:background="#F5F5F5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Source Search View -->
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/svSource"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="Search Source"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Destination Search View -->
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/svDestination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="Search Destination"
+            android:layout_below="@id/svSource"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Google Maps View (Increased Size) -->
+        <FrameLayout
+            android:id="@+id/mapContainer"
+            android:layout_width="380dp"
+            android:layout_height="430dp"
+            android:layout_below="@id/svDestination"
+            android:layout_marginBottom="16dp">
+
+            <!-- Google Map will be rendered here -->
+        </FrameLayout>
+
+        <!-- Price Display -->
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price: -"
+            android:textSize="18sp"
+            android:textColor="#6200EE"
+            android:layout_below="@id/mapContainer"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Distance Display -->
+        <TextView
+            android:id="@+id/tvDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distance: -"
+            android:textSize="18sp"
+            android:textColor="#6200EE"
+            android:layout_below="@id/tvPrice"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Package Description TextView -->
+        <TextView
+            android:id="@+id/tvPackageDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description of Package"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_below="@id/tvDistance"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Package Description EditText -->
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter package description"
+            android:layout_below="@id/tvPackageDescription"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Weight Limit TextView -->
+        <TextView
+            android:id="@+id/tvWeightLimit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight Limit (kg)"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_below="@id/etDescription"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Weight Limit EditText -->
+        <EditText
+            android:id="@+id/etWeightLimit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter weight limit (kg)"
+            android:layout_below="@id/tvWeightLimit"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Search for Drivers Button -->
+        <Button
+            android:id="@+id/btnSearchDrivers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search for Drivers"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#6200EE"
+            android:layout_below="@id/etWeightLimit" />
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
