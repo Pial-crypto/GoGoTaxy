@@ -6,8 +6,6 @@ import android.widget.GridView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class front_page : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,7 +19,7 @@ class front_page : AppCompatActivity() {
         val itemNames = arrayOf("Short trip", "Long trip", "Rental", "Delivery")
         val itemImages = arrayOf(
               R.drawable.short_trip, // Replace with your image resources
-            R.drawable.long_trip,
+            R.drawable.long_trip_big,
              R.drawable.rental,
               R.drawable.delivery
         )

@@ -87,10 +87,9 @@
                 android:id="@+id/hours_picker"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:minValue="1"
-                android:maxValue="24"
+
                 android:value="1"
-                android:wrapSelectorWheel="false" />
+                 />
 
             <!-- Minutes Selection -->
             <TextView
@@ -106,10 +105,9 @@
                 android:id="@+id/minutes_picker"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:minValue="0"
-                android:maxValue="59"
+
                 android:value="0"
-                android:wrapSelectorWheel="false" />
+                 />
         </LinearLayout>
 
         <!-- Confirm Button -->

@@ -88,7 +88,7 @@
                 android:id="@+id/receive_package_button"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/receive_package"
+                android:src="@drawable/receive_package_big"
                 android:contentDescription="Receive Package"
                 android:background="@android:color/transparent" />
 
